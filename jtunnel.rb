@@ -5,20 +5,20 @@
 class Jtunnel < Formula
   desc ""
   homepage "https://github.com/manoj-inukolunu/homebrew-tools"
-  version "0.0.9"
+  version "0.1.0"
 
   on_macos do
     if Hardware::CPU.arm?
-      url "https://github.com/manoj-inukolunu/jtunnel-go/releases/download/v0.0.9/jtunnel-go_Darwin_arm64.tar.gz"
-      sha256 "f325f05fd4726f9657a59c3a3bde1305de6abc4a5e7bed3c42a9e4da9833511f"
+      url "https://github.com/manoj-inukolunu/jtunnel-go/releases/download/v0.1.0/jtunnel-go_Darwin_arm64.tar.gz"
+      sha256 "f24a913de1c4d75de1301ca1e2b4c4a52256c37447bdc9028039a1633c09c583"
 
       def install
         bin.install "jtunnel-go"
       end
     end
     if Hardware::CPU.intel?
-      url "https://github.com/manoj-inukolunu/jtunnel-go/releases/download/v0.0.9/jtunnel-go_Darwin_x86_64.tar.gz"
-      sha256 "a13d4c3f83dd255fe598d29ac95db65dd131440c2c12f8212065fa403662f817"
+      url "https://github.com/manoj-inukolunu/jtunnel-go/releases/download/v0.1.0/jtunnel-go_Darwin_x86_64.tar.gz"
+      sha256 "b2c8948a20b9f08061a1aa85b5caf39985b92d24c008216c2ca7a6b8afb0f3a2"
 
       def install
         bin.install "jtunnel-go"
@@ -28,16 +28,16 @@ class Jtunnel < Formula
 
   on_linux do
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/manoj-inukolunu/jtunnel-go/releases/download/v0.0.9/jtunnel-go_Linux_arm64.tar.gz"
-      sha256 "ffe3ff5af834ed238de287f987b297b36a05f42f2e57d1723f258a3af59de390"
+      url "https://github.com/manoj-inukolunu/jtunnel-go/releases/download/v0.1.0/jtunnel-go_Linux_arm64.tar.gz"
+      sha256 "1097ce2cf733d3656aa3f33fa9b61f833f65b8678975dd9dc9b56af64c15f238"
 
       def install
         bin.install "jtunnel-go"
       end
     end
     if Hardware::CPU.intel?
-      url "https://github.com/manoj-inukolunu/jtunnel-go/releases/download/v0.0.9/jtunnel-go_Linux_x86_64.tar.gz"
-      sha256 "fb0ecab7133f6eaacce5e881dbc38abe70557c657727995e9a351c6f053d4334"
+      url "https://github.com/manoj-inukolunu/jtunnel-go/releases/download/v0.1.0/jtunnel-go_Linux_x86_64.tar.gz"
+      sha256 "2472e414f405464a12eec73d92934a84152ef068a0b31657183824afe049502f"
 
       def install
         bin.install "jtunnel-go"
