@@ -5,20 +5,20 @@
 class Migtunnel < Formula
   desc "Tunneling tool like ngrok and localtunnel"
   homepage "https://github.com/manoj-inukolunu/homebrew-tools"
-  version "0.2.9"
+  version "0.3.0"
 
   on_macos do
     if Hardware::CPU.arm?
-      url "https://github.com/manoj-inukolunu/migtunnel/releases/download/v0.2.9/migtunnel_Darwin_arm64.tar.gz"
-      sha256 "87407644a8f647aec73f22098429a2bccb655e7719d55a6dd74333f43178bd14"
+      url "https://github.com/manoj-inukolunu/migtunnel/releases/download/v0.3.0/migtunnel_Darwin_arm64.tar.gz"
+      sha256 "5b34e6cb41232b4f8fe5217ce8846c0de126466064dd92e6a57204fbb22f2018"
 
       def install
         bin.install "migtunnel"
       end
     end
     if Hardware::CPU.intel?
-      url "https://github.com/manoj-inukolunu/migtunnel/releases/download/v0.2.9/migtunnel_Darwin_x86_64.tar.gz"
-      sha256 "f13f4241959c7c309e7ba4c2dc8f9c13f7e1b8045b1c75c6e86e090d5d0d5b8c"
+      url "https://github.com/manoj-inukolunu/migtunnel/releases/download/v0.3.0/migtunnel_Darwin_x86_64.tar.gz"
+      sha256 "a43bf1d6497f927e3d70fe31cb10711c089e1f0a66ef8f39921cb6b0d67341cd"
 
       def install
         bin.install "migtunnel"
@@ -28,16 +28,16 @@ class Migtunnel < Formula
 
   on_linux do
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/manoj-inukolunu/migtunnel/releases/download/v0.2.9/migtunnel_Linux_arm64.tar.gz"
-      sha256 "6b71351322e45a94c447d3a9ac350e15f28ceb1d48a9502c816afdb920e6b7dc"
+      url "https://github.com/manoj-inukolunu/migtunnel/releases/download/v0.3.0/migtunnel_Linux_arm64.tar.gz"
+      sha256 "fbfa7e169caadb3b950c68e37d16caa35e89205c169f32431582d308f83f2505"
 
       def install
         bin.install "migtunnel"
       end
     end
     if Hardware::CPU.intel?
-      url "https://github.com/manoj-inukolunu/migtunnel/releases/download/v0.2.9/migtunnel_Linux_x86_64.tar.gz"
-      sha256 "91dddccf164f7b7e0df45a57ea2f0bc26c19858ec1cee3abf31846352bf93517"
+      url "https://github.com/manoj-inukolunu/migtunnel/releases/download/v0.3.0/migtunnel_Linux_x86_64.tar.gz"
+      sha256 "4165bceb8775c110c79673d147302ad6e4afe4922ea0da975fa85a12f85e50a6"
 
       def install
         bin.install "migtunnel"
